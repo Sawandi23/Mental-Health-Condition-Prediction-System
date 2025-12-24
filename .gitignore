@@ -1,0 +1,57 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+streamlit.log
+
+# Python tool caches
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+pip-wheel-metadata/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.*
+
+# Models and data (often large/binary)
+models/*.pkl
+models/*.joblib
+data/*.csv
+data/*.parquet
+raw_dataset_snapshot.csv
+raw_dataset_cleaned.csv
+
+# Reports / generated files
+reports/
+reports/*.pdf
+
+# Temporary / OS files
+Thumbs.db
+
+# Misc
+requirements_min.txt
