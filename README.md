@@ -1,79 +1,63 @@
-Mental Health Condition Prediction System 🧠
-Overview
+# Mental Health Condition Prediction System 🧠
 
-The Mental Health Condition Prediction System is a machine learning–based application designed to predict whether an individual is likely to experience a mental health condition based on lifestyle and demographic factors.
+## Overview
+The Mental Health Condition Prediction System is a machine learning–based application designed to predict whether an individual is likely to experience a mental health condition based on lifestyle and demographic factors.  
 The system focuses on early awareness and preventive mental health care using data-driven insights.
 
-Features
+---
 
-Predicts mental health condition (Yes / No)
+## Features
+- Predicts mental health condition (Yes / No)
+- Uses lifestyle-related inputs
+- Trained using multiple machine learning models
+- Best-performing model deployed using Flask
+- Simple and user-friendly web interface
 
-Uses lifestyle-related inputs
+---
 
-Trained using multiple machine learning models
-
-Best-performing model deployed using Flask
-
-Simple and user-friendly web interface
-
-Dataset
-
+## Dataset
 The dataset contains lifestyle and mental health-related information, including:
-
-Age
-
-Gender
-
-Sleep Hours
-
-Work Hours
-
-Physical Activity
-
-Social Media Usage
-
-Diet Quality
-
-Smoking and Alcohol Habits
+- Age
+- Gender
+- Sleep Hours
+- Work Hours
+- Physical Activity
+- Social Media Usage
+- Diet Quality
+- Smoking and Alcohol Habits
 
 Target Variable: Mental_Health_Condition
 
-Machine Learning Models Used
+---
 
-Logistic Regression
+## Machine Learning Models Used
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Gradient Boosting
+- XGBoost
 
-Decision Tree
+Random Forest Classifier showed the best performance and was selected for deployment.
 
-Random Forest
+---
 
-Gradient Boosting
+## Technologies Used
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
+- Flask
+- Joblib
+- Git & GitHub
 
-XGBoost
+---
 
-✅ Random Forest Classifier showed the best performance and was selected for deployment.
+## System Workflow
+1. User enters lifestyle details through the web interface
+2. Data is preprocessed
+3. Trained model predicts the mental health condition
+4. Result is displayed with a supportive message
 
-Technologies Used
+---
 
-Python
 
-Pandas, NumPy
-
-Scikit-learn
-
-Matplotlib, Seaborn
-
-Flask
-
-Joblib
-
-Git & GitHub
-
-System Workflow
-
-User enters lifestyle details through the web interface
-
-Data is preprocessed
-
-Trained model predicts the mental health condition
-
-Result is displayed with a supportive message
