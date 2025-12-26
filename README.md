@@ -1,119 +1,79 @@
-# 🧠 Mental Health Risk Prediction & Assessment System
+Mental Health Condition Prediction System 🧠
+Overview
 
-An advanced machine learning system for predicting mental health conditions, stress levels, and severity, featuring automated preprocessing, multi-algorithm evaluation, and an interactive web interface.
+The Mental Health Condition Prediction System is a machine learning–based application designed to predict whether an individual is likely to experience a mental health condition based on lifestyle and demographic factors.
+The system focuses on early awareness and preventive mental health care using data-driven insights.
 
-## 🌟 Features
+Features
 
-- **Multi-Target Prediction**: Predicts mental health conditions, stress levels, and severity simultaneously
-- **Risk Scoring**: Provides comprehensive risk assessment with confidence scores
-- **Interactive Dashboard**: Streamlit-based web interface for easy interaction
-- **Personalized Recommendations**: Actionable insights based on individual risk factors
-- **Lifestyle Analysis**: Radar chart visualization of lifestyle balance
-- **Data Insights**: Population-level risk distribution and key risk factors
-- **Model Explainability**: SHAP/LIME integration for understanding predictions
-- **Lifestyle "What-If" Scenarios**: Explore how lifestyle changes might affect risk
-- **Anomaly Detection**: Identifies unusual patterns in mental health data
-- **PDF Reports**: Generate detailed assessment reports
-- **Model Comparison**: Cross-validation and hyperparameter tuning
+Predicts mental health condition (Yes / No)
 
-## 🚀 Quick Start
+Uses lifestyle-related inputs
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd mental-health-ml
-   ```
+Trained using multiple machine learning models
 
-2. Create a virtual environment:
-   ```bash
-   python -m venv .venv
-   ```
+Best-performing model deployed using Flask
 
-3. Activate the virtual environment:
-   ```bash
-   # Windows
-   .venv\Scripts\activate
-   
-   # Mac/Linux
-   source .venv/bin/activate
-   ```
+Simple and user-friendly web interface
 
-4. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Dataset
 
-5. Run the Streamlit app:
-   ```bash
-   streamlit run app.py
-   ```
+The dataset contains lifestyle and mental health-related information, including:
 
-6. Open your browser to `http://localhost:8501` to use the application.
+Age
 
-## 📁 Project Structure
+Gender
 
-```
-mental-health-ml/
-├── app.py                 # Main Streamlit application
-├── src/                   # Source code for ML models and utilities
-│   ├── data.py           # Data preprocessing functions
-│   ├── modeling.py       # Model training and evaluation
-│   ├── train_*.py        # Specific model training scripts
-│   └── ...
-├── models/               # Trained model files
-├── data/                 # Dataset files
-├── reports/              # Generated reports
-├── requirements.txt      # Python dependencies
-└── README.md            # This file
-```
+Sleep Hours
 
-## 🧪 Testing
+Work Hours
 
-Run the test scripts to verify model functionality:
+Physical Activity
 
-```bash
-python test_predictions.py
-```
+Social Media Usage
 
-## 📊 Data Requirements
+Diet Quality
 
-The system expects a CSV file with the following columns:
-- User_ID
-- Age
-- Sleep_Hours
-- Work_Hours
-- Physical_Activity_Hours
-- Social_Media_Usage
-- Gender
-- Occupation
-- Country
-- Consultation_History
-- Diet_Quality
-- Smoking_Habit
-- Alcohol_Consumption
-- Medication_Usage
-- Mental_Health_Condition (target)
-- Stress_Level (target)
-- Severity (target)
+Smoking and Alcohol Habits
 
-## 🤖 Models
+Target Variable: Mental_Health_Condition
 
-The system uses ensemble machine learning algorithms:
-- Logistic Regression
-- Random Forest
-- Support Vector Machine (SVM)
-- Gradient Boosting
-- XGBoost
+Machine Learning Models Used
 
-Models are automatically evaluated using 5-fold cross-validation, and the best performing model is selected for each target variable.
+Logistic Regression
 
-## 🛡️ Privacy
+Decision Tree
 
-All data processing is done locally. No personal information is collected or transmitted.
+Random Forest
 
-## 📞 Support
+Gradient Boosting
 
-If you're experiencing a mental health crisis, please contact:
-- National Suicide Prevention Lifeline: 988 (US)
-- Crisis Text Line: Text HOME to 741741
+XGBoost
 
+✅ Random Forest Classifier showed the best performance and was selected for deployment.
+
+Technologies Used
+
+Python
+
+Pandas, NumPy
+
+Scikit-learn
+
+Matplotlib, Seaborn
+
+Flask
+
+Joblib
+
+Git & GitHub
+
+System Workflow
+
+User enters lifestyle details through the web interface
+
+Data is preprocessed
+
+Trained model predicts the mental health condition
+
+Result is displayed with a supportive message
